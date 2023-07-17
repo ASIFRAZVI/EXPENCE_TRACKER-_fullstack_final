@@ -1,0 +1,187 @@
+/* Common styles for both mobile and desktop */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.add-expense,
+.total-expence {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.add-expense h2,
+.total-expence h2 {
+  margin-top: 0;
+}
+
+.add-expense form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-expense label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.add-expense input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-expense button {
+  padding: 8px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.total-expence p {
+  font-size: 24px;
+}
+
+/* Styles for mobile devices */
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .grid-container > * {
+    margin-bottom: 20px;
+  }
+
+  .expences1 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Styles for desktop devices */
+
+@media only screen and (min-width: 601px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .expences1 {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Styles for navigation */
+
+nav {
+  background-color: #b9ecf0;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.buy-pro a {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.buy-pro a:hover {
+  background-color: #d35400;
+}
+
+.logout a {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.logout a:hover {
+  background-color: #a52714;
+}
+
+/* Styles for footer */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Styles for expense list */
+
+.expences1 {
+  background-color:  #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.expences1 h2 {
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#expenceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#expenceList li {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #333;
+}
+
+#expenceList li:last-child {
+  border-bottom: none;
+}
